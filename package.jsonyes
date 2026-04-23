@@ -1,0 +1,32 @@
+cd ~/Desktop
+mkdir temp-scraper && cd temp-scraper
+nano package.json{
+  "name": "tenderedge-scraper-cf",
+  "version": "1.0.0",
+  "description": "Contracts Finder + LA scraper for TenderEdge",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "playwright": "^1.47.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
+npm install
+
+^O
+^J
+
+
