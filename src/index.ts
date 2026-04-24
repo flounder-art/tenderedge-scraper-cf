@@ -1,5 +1,4 @@
 import { createClient } from '@supabase/supabase-js';
-import fetch from 'node-fetch';
 import * as cheerio from 'cheerio';
 
 const CF_URL = 'https://www.contractsfinder.service.gov.uk/Search/Results';
