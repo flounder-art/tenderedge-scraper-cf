@@ -5,6 +5,13 @@ import * as cheerio from 'cheerio';
 const CF_URL = 'https://www.contractsfinder.service.gov.uk/Search/Results';
 const FT_URL = 'https://www.find-tender.service.gov.uk/Search/Results';
 
+// --- ENV VAR DEBUG ---
+console.log('[DEBUG] SUPABASE_URL:', process.env.SUPABASE_URL === undefined ? 'UNDEFINED' : process.env.SUPABASE_URL.slice(0, 50));
+console.log('[DEBUG] SUPABASE_SERVICE_ROLE_KEY:', process.env.SUPABASE_SERVICE_ROLE_KEY === undefined ? 'UNDEFINED' : process.env.SUPABASE_SERVICE_ROLE_KEY.slice(0, 50));
+console.log('[DEBUG] SUPABASE_URL defined:', process.env.SUPABASE_URL !== undefined);
+console.log('[DEBUG] SUPABASE_SERVICE_ROLE_KEY defined:', process.env.SUPABASE_SERVICE_ROLE_KEY !== undefined);
+// --- END ENV VAR DEBUG ---
+
 const supabase = createClient(
   process.env.SUPABASE_URL!,
   process.env.SUPABASE_SERVICE_KEY!
